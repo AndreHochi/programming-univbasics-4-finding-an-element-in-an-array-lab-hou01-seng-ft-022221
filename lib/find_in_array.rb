@@ -1,15 +1,13 @@
 require 'pry'
-
-
-
 def find_element_index(array, value_to_find)
-  value = nil
   count = 0
-  while count < array.length do 
-    if array[count] == value_to_find do
-      value = count
+  found_value_index = nil
+  while count < array.length do
+    if array[count] == value_to_find
+      found_value_index = count
     end
-    count = count + 1
+    count += 1
   end
-  value
+  found_value_index
 end
+
